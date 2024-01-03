@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+    <meta charset="utf-8">
+    <title>
+        Реєстрація
+    </title>
+    <h3 style="text-shadow: #CBF3FF;" class="background-main"> Easy IT learn</h3>
+    
+    <style>
+        .background-main {
+            background-color: #C8DDB8;
+        }
+        .registration {
+            margin: auto;
+            color: #000;
+
+font-family: Inter;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.75px;
+        }
+        .main-lock {
+            margin-left: 460px;
+            width: 880px;
+height: 909px;
+flex-shrink: 0;
+border-radius: 30px;
+background: rgba(125, 134, 111, 0.54);
+filter: blur(2px);
+        }
+        .name {
+            display: inline-flex;
+padding: 32px 312px 32px 18px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 55px;
+background: #D9D9D9;
+        }
+        .nametxt {
+            color: #817A7A;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal; 
+        }
+        form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    label,
+    input,
+    textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .butt {
+        
+            margin-left: 66px;
+            margin-top: 40px;
+            color: #000;
+
+        font-family: Inter;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+            display: inline-block;
+      padding: 17px 48px;
+      font-size: px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 25px;
+      background-color: #adabab;
+      color: rgb(0, 0, 0);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+        }
+    
+
+    </style>
+    <p class="registration"><center class="registration">Реєстрація</center></p>
+
+</head>
+  <body class="background-main">
+
+    <!--створення полів форми для заповення-->
+    <!--поле для пошти-->
+        <form action="/submit_form" method="post">
+            <div>
+                <label for="name">Ведіть ваш e-mail</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <!--введення ім'я-->
+
+            <div>
+                <label for="name"> Введіть ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!--введення паролю-->
+
+            <div>
+                    <label for="password">Ведіть ваш пароль:</label>
+                    <input type="password">
+                </div>
+
+                <!--запам'ятати мене-->
+
+                <label for="member">Запам'ятати мене</label>
+                <input type="checkbox">
+            </div>
+
+            <!--реєстрація-->
+
+            <button class="butt">Зареєструватися</button>
+        </form>
+    </body>
+        
+
+</html>
