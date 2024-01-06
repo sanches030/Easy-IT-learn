@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <meta charset="utf-8">
+    <head>
+        <title>
+            Вся інформація про класи
+        </title>
+    </head>
+    <style>
+        .background-main {
+            background-color: #344A29;
+        }
+        .main {
+            margin-left: 874px;
+            color: #FFF;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.9px;
+        }
+        .p1 {
+            margin-left: 30px;
+            color: #FFF;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.75px;
+        }
+    </style>
+
+    <body class="background-main">
+        <h1 class="main">Класи</h1>
+        <p class="p1">Щоб створити клас, використовуйте ключове слово class:</p>
+
+            <p class="p1">Приклад
+            Створіть клас під назвою MyClass із властивістю x:</p>
+            
+           <p class="p1"> class MyClass:
+              x = 5
+            </p>
+           <p class="p1">Створити об'єкт
+            Тепер ми можемо використовувати клас під назвою MyClass для створення об’єктів:</p>
+            
+            <p class="p1">приклад
+            Створіть об’єкт з іменем p1 і виведіть значення x:</p>
+            
+            <p class="p1">p1 = MyClass()</p>
+           <p class="p1">print(p1.x)</p>
+            
+           <p class="p1">Функція __init__().
+           <p class="p1">Наведені вище приклади є класами та об’єктами в їх найпростішій формі не дуже корисний у реальних програмах.</p>
+            
+           <p class="p1">Щоб зрозуміти значення класів, ми повинні зрозуміти вбудований __init__() функція.</p>
+            
+           <p class="p1">Усі класи мають функцію під назвою __init__(), яка завжди виконується, коли заняття розпочинається.</p>
+            
+           <p class="p1">Використовуйте функцію __init__(), щоб призначити значення властивостям об’єкта або іншим операції, які необхідно виконати, коли об'єкт створюється:</p>
+            
+            <p class="p1">приклад</p>
+            <p class="p1">Створіть клас під назвою Person, скористайтеся функцією __init__(), щоб призначити значення для імені та віку:</p>
+            
+            <p class="p1">class Person:</p>
+             <p class="p1">def __init__(self, name, age):</p>
+               <p class="p1">self.name = name</p>
+               <p class="p1">self.age = age </p>
+            
+            <p class="p1">p1 = Person("John", 36)</p>
+            
+            <p class="p1">print(p1.name)</p>
+            <p class="p1">print(p1.age)</p>
+            
+           <p class="p1">Функція __str__().
+            Функція __str__() контролює те, що має повертатися, коли об’єкт класу представлено у вигляді рядка.</p>
+            
+           <p class="p1">Якщо функція __str__() не встановлена, рядкове представлення об’єкта повертається:</p>
+            
+            <p class="p1">приклад</p>
+           <p class="p1">Рядкове представлення об’єкта БЕЗ функції __str__():</p>
+            
+            <p class="p1">class Person:</p>
+             <p class="p1">def __init__(self, name, age):</p>
+               <p class="p1">self.name = name</p>
+                <p class="p1">self.age = age</p>
+            
+            <p class="p1">p1 = Person("John", 36)</p>
+            
+            <p class="p1">print(p1)</p>
+            
+           <p class="p1">приклад</p>
+           <p class="p1">Рядкове представлення об’єкта ІЗ функцією __str__():</p>
+            
+            <p class="p1">class Person:</p>
+             <p class="p1">def __init__(self, name, age):</p>
+                <p class="p1">self.name = name</p>
+                <p class="p1">self.age = age</p>
+            
+              <p class="p1">def __str__(self):</p>
+                <p class="p1">return f"{self.name}({self.age})"</p>
+            
+            <p class="p1">p1 = Person("John", 36)</p>
+            
+            <p class="p1">print(p1)</p>
+            
+            <p class="p1">Методи об’єктів</p>
+            <p class="p1">Об'єкти також можуть містити методи. Методи в об'єктах - це функції, які належать об'єкту.</p>
+            
+            <p class="p1">Давайте створимо метод у класі Person:</p>
+            
+            <p class="p1">приклад</p>
+            <p class="p1">Вставте функцію, яка друкує привітання, і виконайте її на об’єкті p1:</p>
+            
+            <p class="p1">class Person:</p>
+              <p class="p1">def __init__(self, name, age):</p>
+                <p class="p1">self.name = name</p>
+                <p class="p1">self.age = age</p>
+            
+              <p class="p1">def myfunc(self):</p>
+                <p class="p1">print("Hello my name is " + self.name)</p>
+            
+            <p class="p1">p1 = Person("John", 36)</p>
+            <p class="p1">p1.myfunc()</p>
+            
+            <p class="p1">Параметр self: 
+            Параметр self є посиланням на поточний екземпляр класу та використовується для доступу до змінних, які належать до класу.</p>
+            
+            <p class="p1">Це не обов’язково називати self , ви можете називайте його як завгодно, але він має бути першим параметром будь-якої функції у класі:</p>
+            
+            <p class="p1">приклад</p>
+            <p class="p1">Використовуйте слова mysillyobject та abc замість < /span>:self</p>
+            
+            <p class="p1">class Person:</p>
+              <p class="p1">def __init__(mysillyobject, name, age):</p>
+                <p class="p1">mysillyobject.name = name</p>
+                <p class="p1">mysillyobject.age = age</p>
+            
+             <p class="p1">def myfunc(abc):</p>
+               <p class="p1">print("Hello my name is " + abc.name)</p>
+            
+            <p class="p1">p1 = Person("John", 36)</p>
+            <p class="p1">p1.myfunc()</p>
+            
+            <p class="p1">Змінити властивості об’єкта</p>
+            <p class="p1">Ви можете змінювати властивості об’єктів таким чином:</p>
+            
+           <p class="p1">приклад</p>
+            <p class="p1">Встановіть вік p1 до 40:</p>
+            
+            <p class="p1"> p1.age = 40</p>
+            
+            <p class="p1"> Видалити властивості об’єкта</p>
+            <p class="p1">Ви можете видалити властивості об’єктів за допомогою ключового слова del:</p>
+            
+            <p class="p1">приклад</p>
+            <p class="p1"> Видаліть властивість віку з об’єкта p1:</p>
+            
+            <p class="p1">del p1.age</p>
+            
+            <p class="p1">Видалити об'єкти</p>
+           <p class="p1"> Ви можете видаляти об’єкти за допомогою ключового слова del:</p>
+            
+           <p class="p1">приклад</p>
+           <p class="p1">Видаліть об'єкт p1:</p>
+            
+            <p class="p1">del p1</p>
+        
+    </body>
+    
+</html>
