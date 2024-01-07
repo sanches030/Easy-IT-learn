@@ -1,0 +1,136 @@
+.background-main {
+    background: linear-gradient(121deg, #CBF3FF 6.51%, #C8DDB8 102.62%);     
+}  
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1025px) { 
+}
+.header1 {
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+}
+.header2 {
+    font-size: x-large;
+    color: black;
+    margin-left: 80px;
+}
+.header3 {
+    font-size: x-large;
+    color: black;
+    margin-left: 80px;
+}
+.header4 {
+    font-size: x-large;
+    color: black;
+    margin-left: 80px;
+}
+.header5 {
+    font-size: x-large;
+    color: black;
+    margin-left: 598px;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+.text1 {
+    
+    margin-left: 934px;
+    width: 897px;
+    color: #000;
+
+font-family: Marmelad;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.08px;
+    
+}
+
+.button1 {
+    transition: transform 0.5s ease;
+    margin-left: 39px;
+    margin-top: 40px;
+    color: #000;
+
+font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    display: inline-block;
+padding: 17px 48px;
+font-size: px;
+text-align: center;
+text-decoration: none;
+border-radius: 25px;
+background-color: #adabab;
+color: rgb(0, 0, 0);
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.button1:hover {
+    transform: scale(1.1)
+}
+.button2 {
+    transition: transform 0.3s ease;
+    margin-top: 34px;
+    margin-left: 105px;
+    color: #000000;
+font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: inline-block;
+padding: 16px 37px;
+font-size: 23px;
+text-align: center;
+text-decoration: none;
+border-radius: 233px;
+background-color: #adabab;
+color: rgb(0, 0, 0);
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+
+}
+.button2:hover {
+    transform: scale(1.1)
+}
+     p1 {
+    border-radius: 33px;
+    margin-left: 860px;
+    background-color: #d5f0a3;
+    width: 897px; 
+}
+.pics {
+    margin: 160px;
+}
+.floater {
+    width: 1890px;
+height: 232px;
+flex-shrink: 0;
+    background-color: #2A4321;
+
+}
+.bottom-text {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #FFF;
+
+font-family: Roboto;
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.26px;
+}
