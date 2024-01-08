@@ -1,12 +1,13 @@
 .background-main {
     background: linear-gradient(121deg, #CBF3FF 6.51%, #C8DDB8 102.62%);     
 }  
-@media screen and (max-width: 768px) {
-    
+.body {
+ font-size: 1vw;
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-aspect-ratio: 16/9) {
+    body {
+    font-size: 1.5vw;
 }
-@media screen and (min-width: 1025px) { 
 }
 .header1 {
     font-size: x-large;
@@ -31,7 +32,7 @@
 .header5 {
     font-size: x-large;
     color: black;
-    margin-left: 598px;
+    margin-left: 4%;
 }
 
 .img {
@@ -39,6 +40,22 @@
     height: 20px;
     margin-top: 10px;
 }
+.language-button {
+    margin-left: 30%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7ff1cf;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Ефект при наведенні */
+  .language-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1); /* збільшуємо розмір при наведенні */
+  }
 .text1 {
     
     margin-left: 934px;
