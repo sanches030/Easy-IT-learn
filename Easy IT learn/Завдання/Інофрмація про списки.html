@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="utf-8">
+        <title>Робота зі списками</title>
+    </head>
+    <style>
+        .background-main {
+            background: #344A29;
+        }
+        .main {
+            margin-left: 50%;
+            color: #FFF;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.9px;
+        }
+        .p {
+            margin-right: 10%;
+            margin-left: 21%;
+            color: #FFF;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.75px;  
+        }
+    </style>
+    <body class="background-main">
+
+        <h1 class="main">Списки</h1>
+
+        <p class="p">Списки використовуються для зберігання кількох елементів в одній змінній.
+            Списки є одним із 4 вбудованих типів даних у Python, які використовуються для зберігання колекцій даних, інші 3 є Tuple , Set і Dictionary , усі з різною якістю та використанням.
+            Списки створюються за допомогою квадратних дужок:</p>
+            <p class="p">Створіть список:</p>
+            <p class="p">thislist = ["apple", "banana", "cherry"]print(thislist)</p>
+            <p class="p">Елементи списку впорядковані, змінні та допускають дублювання значень.
+                Елементи списку індексуються, перший пункт має індекс [0], другий пункт має індекс [1]тощо.</p>
+                <p class="p">Коли ми говоримо, що списки впорядковані, це означає, що елементи мають визначений порядок, і цей порядок не зміниться.
+                    Якщо ви додаєте нові елементи до списку, нові елементи будуть розміщені в кінці списку.
+                    </p>
+                    <p class="p">Список змінний, тобто ми можемо змінювати, додавати та видаляти елементи в списку після його створення.</p>
+                    <p class="p">Оскільки списки індексовані, списки можуть містити елементи з однаковими значеннями:</p>
+                    <p class="p">Списки допускають повторювані значення:</p>
+                    <p class="p">thislist = ['apple', 'banana', 'cherry', 'apple', 'cherry']</p>
+                    <p class="p">print(thislist)</p>
+                    <p class="p">Щоб визначити кількість елементів у списку, використовуйте len()функцію:</p>
+                    <p class="p">Вивести кількість елементів у списку:</p>
+                    <p class="p">
+                        thislist = ["apple", "banana", "cherry"]</p>
+                        <p class="p">print(len(thislist))</p>
+                        <p class="p">Елементи списку можуть мати будь-який тип даних:</p>
+                        <p class="p">Типи даних String, int і boolean:</p>
+                        <p class="p">list1 = ["apple", "banana", "cherry"]</p>
+                        <p class="p">list2 = [1, 5, 7, 9, 3]</p>
+                        <p class="p">list3 = [True, False, False]</p>
+                        <p class="p">Список може містити різні типи даних:</p>
+                        <p class="p">Список із рядками, цілими числами та логічними значеннями:</p>
+                        <p class="p">list1 = ["abc", 34, True, 40, "male"]</p>
+                        <p class="p">З точки зору Python, списки визначаються як об’єкти з типом даних «список»:
+                            <class 'list'></p>
+                                <p class="p">Що таке тип даних списку?</p>
+                                <p class="p">mylist = ["apple", "banana", "cherry"]</p>
+                                <p class="p">print(type(mylist))</p>
+                                <p class="p">Також можна використовувати конструктор list() під час створення нового списку.</p>
+                                <p class="p">Використання list()конструктора для створення списку:</p>
+                                <p class="p">thislist = list(("apple", "banana", "cherry")) # note the double round-brackets</p>
+                                <p class="p">print(thislist)</p>
+                                <p class="p">У мові програмування Python є чотири типи даних колекції:
+                                    Список - це колекція, яка є впорядкованою та змінною. Дозволяє дублювати учасників.
+                                    Кортеж- це колекція, яка є впорядкованою та незмінною. Дозволяє дублювати учасників.
+                                    Набір — це невпорядкована, незмінна* та неіндексована колекція. Немає дублікатів учасників.
+                                    Словник – збірник, який є впорядкованим** і змінним. Немає дублікатів учасників.</p>
+                                    <p class="p">Доступ до елементів.
+                                        Елементи списку проіндексовано, і ви можете отримати доступ до них, посилаючись на номер індексу:</p>
+                                        <p class="p">Вивести другий пункт списку:</p>
+                                        <p class="p">thislist = ["apple", "banana", "cherry"]print(thislist[1])</p>
+                                        <p class="p">Негативна індексація. Негативна індексація означає початок з кінця
+                                            -1 посилається на останній елемент, -2 посилається на передостанній елемент тощо.</p>
+                                            <p class="p">Надрукувати останній пункт списку:</p>
+                                            <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                            <p class="p">print(thislist[-1])</p>
+                                            <p class="p">Діапазон індексів.
+                                                Ви можете вказати діапазон індексів, вказавши, де починати і де закінчувати діапазон.
+                                                Якщо вказати діапазон, значенням, що повертається, буде новий список із зазначеними елементами.
+                                                </p>
+                                                <p class="p">Повернути третій, четвертий і п’ятий елементи:</p>
+                                                <p class="p">thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</p>
+                                                <p class="p">print(thislist[2:5])</p>
+                                                <p class="p">Якщо пропустити початкове значення, діапазон розпочнеться з першого елемента:</p>
+                                                <p class="p">Цей приклад повертає елементи від початку до "kiwi", але НЕ включаючи:</p>
+                                                <p class="p">thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</p>
+                                                <p class="p">print(thislist[:4])</p>
+                                                <p class="p">Якщо залишити кінцеве значення, діапазон перейде до кінця списку:</p>
+                                                <p class="p">Цей приклад повертає елементи від "вишні" до кінця:</p>
+                                                <p class="p">thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</p>
+                                                <p class="p">print(thislist[2:])</p>
+                                                <p class="p">Діапазон негативних індексів.
+                                                    Вкажіть негативні індекси, якщо ви хочете почати пошук з кінця списку:</p>
+                                                <p class="p">У цьому прикладі повертаються елементи від «апельсина» (-4) до «манго» (-1), але НЕ включаючи:</p>
+                                                <p class="p">thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</p>
+                                                <p class="p">print(thislist[-4:-1])</p>
+                                                <p class="p">Перевірте, чи існує елемент.
+                                                    Щоб визначити, чи присутній певний елемент у списку, використовуйте in ключове слово:</p>  
+                                                <p class="p">Перевірте, чи є в списку «яблуко»:</p> 
+                                                <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                                <p class="p">if "apple" in thislist:</p>
+                                                <p class="p">print("Yes, 'apple' is in the fruits list")</p>
+                                                <p class="p">Щоб змінити значення певного елемента, зверніться до номера індексу:</p>
+                                                <p class="p">Змініть другий пункт:</p>
+                                                <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                                <p class="p">thislist[1] = "blackcurrant"</p>
+                                                <p class="p">print(thislist)</p>
+                                                <p class="p">Змінити діапазон значень елементів.
+                                                    Щоб змінити значення елементів у певному діапазоні, визначте список із новими значеннями та зверніться до діапазону номерів індексів, куди потрібно вставити нові значення:</p>
+                                                <p class="p">Змініть значення «банан» і «вишня» на значення «чорна смородина» і «кавун»:
+                                                    thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]</p>
+                                            <p class="p">thislist[1:3] = ["blackcurrant", "watermelon"]</p>
+                                            <p class="p">print(thislist)</p>
+                                            <p class="p">Якщо ви вставите більше елементів, ніж заміните, нові елементи буде вставлено там, де ви вказали, а решта елементів перемістяться відповідно:</p>
+                                            <p class="p">Змініть друге значення, замінивши його двома новими значеннями:</p>
+                                            <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                            <p class="p">thislist[1:2] = ["blackcurrant", "watermelon"]</p>
+                                            <p class="p">print(thislist)</p>
+                                            <p class="p">Якщо ви вставите менше елементів, ніж заміните, нові елементи буде вставлено там, де ви вказали, а решта елементів перемістяться відповідно:</p>
+                                            <p class="p">Змініть друге і третє значення, замінивши його одним значенням:</p>
+                                            <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                            <p class="p">thislist[1:3] = ["watermelon"]</p>
+                                            <p class="p">print(thislist)</p>
+                                            <p class="p">Вставити елементи.
+                                                Щоб вставити новий елемент списку, не замінюючи жодного з існуючих значень, ми можемо використати insert()метод.
+                                                Метод insert()вставляє елемент за вказаним індексом:</p>
+                                            <p class="p">Третім пунктом вставте «кавун»:</p> 
+                                            <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                            <p class="p">thislist.insert(2, "watermelon")</p> 
+                                            <p class="p">print(thislist)</p>
+                                            <p class="p">Додати елементи.
+                                                Щоб додати елемент у кінець списку, використовуйте метод append() :</p> 
+                                        <p class="p">Використання append() методу для додавання елемента:</p>
+                                        <p class="p">thislist = ["apple", "banana", "cherry"]</p> 
+                                        <p class="p">thislist.append("orange")</p>    
+                                        <p class="p">print(thislist)</p>
+                                        <p class="p">Вставити елементи
+                                            Щоб вставити елемент списку за вказаним індексом, використовуйте insert()метод.
+                                            Метод insert()вставляє елемент за вказаним індексом:</p>
+                                    <p class="p">Вставте елемент як другу позицію:</p>
+                                    <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                    <p class="p">thislist.insert(1, "orange")</p>
+                                    <p class="p">print(thislist)</p>
+                                    <p class="p">Розширити список.
+                                        Щоб додати елементи з іншого списку до поточного списку, використовуйте extend()метод.</p>
+                                    <p class="p">Додайте елементи tropicalдо thislist:</p> 
+                                    <p class="p">thislist = ["apple", "banana", "cherry"]</p> 
+                                    <p class="p">tropical = ["mango", "pineapple", "papaya"]</p>
+                                    <p class="p">thislist.extend(tropical)</p>
+                                    <p class="p">print(thislist)</p>
+                                    <p class="p">Елементи будуть додані в кінець списку.</p>
+                                    <p class="p">Додайте будь-який ітерований
+                                        метод, extend() не повинен додавати списки , ви можете додавати будь-який ітерований об’єкт (кортежі, набори, словники тощо).</p>
+                                <p class="p">Додати елементи кортежу до списку:</p>
+                                <p class="p">thislist = ["apple", "banana", "cherry"]</p>
+                                <p class="p">thistuple = ("kiwi", "orange")</p>
+                                <p class="p">thislist.extend(thistuple)</p>
+                                <p class="p">print(thislist)</p>
+                     
+    </body>
+</html>
