@@ -1,0 +1,67 @@
+.background-main {
+    background: linear-gradient(120deg, #CBF3FF 5.17%, #C8DEBC 94.57%, #C8DDB8 99.99%, rgba(255, 255, 255, 0.00) 100%);
+}
+.p {
+    overflow: auto;
+    margin-top: 4%;
+    align-items: center;
+    color: #000;
+font-family: Inter;
+font-size: 35px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.05px;
+}
+.p1 {
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-top: 10%;
+    color: #000;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.78px;
+}
+.p2 {
+    margin-bottom: 2%;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: #000;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.78px;
+}
+.block1 {
+    margin-left: 35px;
+    width: 1236px;
+height: 710px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #D9D9D9;
+}
+.block2 {
+    margin-bottom: 138px;
+    margin-left: 35px;
+    width: 1236px;
+height: 710px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #D9D9D9;
+}
+.info1 {
+    margin-top: 70px;
+    margin-left: 1100px;
+    color: #000;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.78px;
+}

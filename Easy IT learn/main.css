@@ -10,29 +10,67 @@
 }
 }
 .header1 {
+    padding: 5px;
+    text-decoration: none;
     font-size: x-large;
     color: rgb(0, 0, 0);
     margin-left: 50px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.header1:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+    transform: scale(1.5);
 }
 .header2 {
+    padding: 5px;
+    text-decoration: none;
     font-size: x-large;
     color: black;
     margin-left: 80px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.header2:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
 }
 .header3 {
+    padding: 5px;
+    text-decoration: none;
     font-size: x-large;
     color: black;
     margin-left: 80px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out
+}
+.header3:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
 }
 .header4 {
+    padding: 5px;
+    text-decoration: none;
     font-size: x-large;
     color: black;
     margin-left: 80px;
+    transition: background-color 0.5s ease-in, transform 0.5s ease-in;
+}
+.header4:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
 }
 .header5 {
+    padding: 5px;
+    text-decoration: none;
     font-size: x-large;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-left: 4%;
+    transition: background-color 0.5s ease-in, transform 0.5s ease-in;
+}
+.header5:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
 }
 
 .img {
@@ -48,13 +86,19 @@
     border-radius: 5px;
     background-color: #7ff1cf;
     color: #fff;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
   }
   
   /* Ефект при наведенні */
   .language-button:hover {
     background-color: #2980b9;
     transform: scale(1.1); /* збільшуємо розмір при наведенні */
+  }
+  .line {
+    margin-top: 1%;
+    width: 2000x;
+height: 4px;
+background: #B0CF98;
   }
 .text1 {
     
@@ -72,8 +116,7 @@ letter-spacing: 1.08px;
 }
 
 .button1 {
-    transition: transform 0.5s ease;
-    margin-left: 39px;
+    margin-left: 2.5%;
     margin-top: 40px;
     color: #000;
 
@@ -92,13 +135,15 @@ background-color: #adabab;
 color: rgb(0, 0, 0);
 border: none;
 cursor: pointer;
-transition: background-color 0.3s ease;
+transition: background-color 0.5s ease, transform 0.5s ease-in;
 }
 .button1:hover {
-    transform: scale(1.1)
+    border-radius: 25px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
+
 }
 .button2 {
-    transition: transform 0.3s ease;
     margin-top: 34px;
     margin-left: 105px;
     color: #000000;
@@ -112,16 +157,18 @@ padding: 16px 37px;
 font-size: 23px;
 text-align: center;
 text-decoration: none;
-border-radius: 233px;
+border-radius: 33px;
 background-color: #adabab;
 color: rgb(0, 0, 0);
 border: none;
 cursor: pointer;
-transition: background-color 0.3s ease;
+transition: background-color 0.5s ease-in, transform 0.5s ease-in;
 
 }
 .button2:hover {
-    transform: scale(1.1)
+    border-radius: 33px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
 }
      p1 {
     border-radius: 33px;
