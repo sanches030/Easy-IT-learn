@@ -1,0 +1,214 @@
+.background-main {
+    background: linear-gradient(121deg, #CBF3FF 6.51%, #C8DDB8 102.62%);     
+}  
+.logo {
+    vertical-align: middle; /* Вирівнювання по вертикалі */
+    margin-left: 0px;
+    margin-top: -7px; /* Підняти логотип на 5 пікселів вище */
+    width: 35px; /* Задайте ширину, яка підходить вам */
+}
+.body {
+ font-size: 1vw;
+}
+@media screen and (min-aspect-ratio: 16/9) {
+    body {
+    font-size: 1.5vw;
+}
+}
+.header1 {
+    font-family: Nunito;
+    padding: 5px;
+    text-decoration: none;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.header1:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+    transform: scale(1.5);
+}
+.header2 {
+    padding: 5px;
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    margin-left: 80px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.header2:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+}
+.header3 {
+    padding: 5px;
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    margin-left: 80px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out
+}
+.header3:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+}
+.header4 {
+    padding: 5px;
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    margin-left: 80px;
+    transition: background-color 0.5s ease-in, transform 0.5s ease-in;
+}
+.header4:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
+}
+.header5 {
+    padding: 5px;
+    text-decoration: none;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    margin-left: 6%;
+    transition: background-color 0.5s ease-in, transform 0.5s ease-in;
+}
+.header5:hover {
+    border-radius: 5px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
+}
+.language-button {
+    margin-left: 36%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7ff1cf;
+    color: #fff;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+ 
+  .language-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1); /* збільшуємо розмір при наведенні */
+  }
+  .line {
+    margin-top: 1%;
+    width: 2000x;
+height: 4px;
+background: #B0CF98;
+  }
+.text1 {
+    
+    margin-left: 934px;
+    width: 897px;
+    color: #000;
+
+font-family: Marmelad;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.08px;
+    
+}
+
+.button1 {
+    margin-left: 2.5%;
+    margin-top: 40px;
+    color: #000;
+
+font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    display: inline-block;
+padding: 17px 48px;
+font-size: px;
+text-align: center;
+text-decoration: none;
+border-radius: 25px;
+background-color: #adabab;
+color: rgb(0, 0, 0);
+border: none;
+cursor: pointer;
+transition: background-color 0.5s ease, transform 0.5s ease-in;
+}
+.button1:hover {
+    border-radius: 25px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
+
+}
+.button2 {
+    margin-top: 34px;
+    margin-left: 105px;
+    color: #000000;
+font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: inline-block;
+padding: 16px 37px;
+font-size: 23px;
+text-align: center;
+text-decoration: none;
+border-radius: 33px;
+background-color: #adabab;
+color: rgb(0, 0, 0);
+border: none;
+cursor: pointer;
+transition: background-color 0.5s ease-in, transform 0.5s ease-in;
+
+}
+.button2:hover {
+    border-radius: 33px;
+    background-color: #5ec8d6;
+    transform: scale(1.1);
+}
+     p1 {
+    border-radius: 33px;
+    margin-left: 860px;
+    background-color: #d5f0a3;
+    width: 897px; 
+}
+.pics {
+    margin: 160px;
+}
+.floater {
+    width: 1890px;
+height: 232px;
+flex-shrink: 0;
+    background-color: #2A4321;
+
+}
+.bottom-text {
+    margin: 5px;
+    text-decoration: none;  
+    margin-left: 20px;
+    color: #FFF;
+
+font-family: Roboto;
+font-size: 26px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.26px;
+}
+.img-footer {
+    vertical-align: middle;
+    width: 54px;
+height: 54px;
+flex-shrink: 0;
+}
+.bottom-text2 {
+    text-decoration: none;
+    color: #FFF;
+    margin-top: -10.3%;
+    margin-left: 11%;
+}
