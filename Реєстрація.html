@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+    <meta charset="utf-8">
+    <title>
+        Реєстрація
+    </title>
+    
+    <style>
+        .password-container {
+            margin-left: 12.5%;
+            align-items: center;
+            margin-top: 2em;
+      position: relative;
+      display: inline-block;
+    }
+
+    .password-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .password-icon::before {
+      content: '\1F441'; /* Unicode для глаза (👁) */
+      font-size: 20px;
+    }
+
+    .password-input {
+      padding-right: 30px; /* Добавляем дополнительное пространство справа для иконки */
+    }
+
+        /* Стилі для логотипу */
+        .logo {
+            vertical-align: middle;
+            margin-left: 0px;
+            margin-top: -7px;
+            width: 35px;
+        }
+
+        /* Стилі для головного фону */
+        .background-main {
+            background-color: #a5cfa7;
+        }
+
+
+        /* Стилі для основного блоку */
+        .main-lock {
+            margin-left: 460px;
+            width: 880px;
+            height: 909px;
+            flex-shrink: 0;
+            border-radius: 30px;
+            background: rgba(125, 134, 111, 0.54);
+            filter: blur(2px);
+        }
+
+        /* Стилі для блоку імені */
+        .name {
+            display: inline-flex;
+            padding: 32px 312px 32px 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 55px;
+            background: #D9D9D9;
+        }
+
+        /* Стилі для тексту імені */
+        .nametxt {
+            color: #817A7A;
+            font-family: Inter;
+            font-size: 0px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal; 
+        }
+
+        /* Стилі для форми входу */
+        form {
+            background-color: #768d77;
+            padding: 25px 15px; /* Змініть padding на 25px вгору/вниз і 15px зліва/праворуч */
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: -170px auto; /* Змініть margin на 10px вгору/вниз і автоматичний по горизонталі */
+        }
+        
+
+/* Стилі для елементів форми (label, input, textarea) */
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    color: #000000;
+}
+
+/* Стилі для полів вводу */
+input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    /* Додайте стилі для рамки при фокусуванні */
+    outline: none; /* Видаляє стандартну рамку браузера */
+}
+
+/* Стилі для текстових полів */
+textarea {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    /* Додайте стилі для рамки при фокусуванні */
+    outline: none; /* Видаляє стандартну рамку браузера */
+}
+
+/* Стилі для рамки при фокусуванні */
+input:focus,
+textarea:focus {
+    border: 2px solid rgb(0, 217, 255); /* Змініть колір рамки при фокусуванні на оранжевий */
+}
+
+        /* Стилі для кнопки входу */
+        .butt {
+            margin-left: 130px;
+            margin-top: 40px;
+            color: #000000;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            display: inline-block;
+            padding: 17px 35px;
+            font-size: px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 45px;
+            background-color: #a5cfa7;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease, transform 0.5s ease-in;
+            
+        }
+
+        /* Стилі для анімації кнопки входу при наведенні */
+        .butt:hover {
+            border-radius: 45px;
+            background-color: #a5cfcc;
+            transform: scale(1.0);
+        }
+
+        /* Стилі для тексту реєстрації */
+        .registration {
+            margin: auto;
+            color: #000;
+            font-family: Inter;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 0.8; /* Змініть це значення відповідно до ваших потреб */
+            letter-spacing: 1.75px;
+            margin-bottom: 200px; /* Змініть це значення відповідно до ваших потреб */
+        }
+
+
+
+    </style>
+
+    </style>
+    <p class="registration"><center class="registration">Реєстрація</center></p>
+
+</head>
+  <body class="background-main">
+  <!-- Заголовок з логотипом -->
+  <h2>Easy IT learn <img class="logo" width="35px" src="e:\Документы\Programing\Easy IT learn\images\683155.png"></h3>
+
+    <!-- Текст реєстрації -->
+
+    <!-- Форма для входу -->
+    <form action="/submit_form" method="post">
+
+        <!-- Введення ім'я -->
+        <div>
+            <label for="e-mail"></label>
+            <input type="email" id="email" name="e-mail" required placeholder="Your E-mail">
+        </div>
+
+        <!-- Введення паролю -->
+        <div>
+            <div class="password-container">
+                <input type="password" class="password-input" placeholder="Create your password">
+                <div class="password-icon" onclick="togglePasswordVisibility()"></div>
+              </div>
+              
+              <script>
+                function togglePasswordVisibility() {
+                  var passwordInput = document.querySelector('.password-input');
+                  var passwordIcon = document.querySelector('.password-icon');
+              
+                  if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    passwordIcon.style.color = 'blue'; // Измените цвет, если нужно
+                  } else {
+                    passwordInput.type = 'password';
+                    passwordIcon.style.color = 'black'; // Измените цвет, если нужно
+                  }
+                }
+              </script>
+
+        </div>
+        <div>
+            <div class="password-container">
+                <input type="password" class="password-input" placeholder="Repit your password">
+                <div class="password-icon" onclick="togglePasswordVisibility()"></div>
+              </div>
+              
+              <script>
+                function togglePasswordVisibility() {
+                  var passwordInput = document.querySelector('.password-input');
+                  var passwordIcon = document.querySelector('.password-icon');
+              
+                  if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    passwordIcon.style.color = 'blue'; // Измените цвет, если нужно
+                  } else {
+                    passwordInput.type = 'password';
+                    passwordIcon.style.color = 'black'; // Измените цвет, если нужно
+                  }
+                }
+              </script>
+
+        </div>
+
+        <!-- Кнопка для входу -->
+        <button class="butt"><center>Log in</center></button>
+    </form>
+    </body>
+        
+
+</html>
